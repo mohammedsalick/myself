@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Salick M.A. | Software Engineer</title>
+    <link rel="icon" type="image/jpeg" href="./Profile.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #334155; /* slate-700 */
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .tab-btn.active {
+            background-color: #0d9488; /* teal-600 */
+            color: #ffffff;
+        }
+        .nav-link.active {
+            color: #0d9488;
+            font-weight: 700;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.75rem;
+            top: 0.25rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 9999px;
+            background-color: #ccfbf1; /* teal-100 */
+            border: 3px solid #0d9488; /* teal-600 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-slate-800 tracking-tight">Mohammed Salick M A.</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#skills" class="nav-link text-slate-600 hover:text-teal-600 transition-colors duration-300">Skills</a>
+                <a href="#projects" class="nav-link text-slate-600 hover:text-teal-600 transition-colors duration-300">Projects</a>
+                <a href="#experience" class="nav-link text-slate-600 hover:text-teal-600 transition-colors duration-300">Experience</a>
+                <a href="#education" class="nav-link text-slate-600 hover:text-teal-600 transition-colors duration-300">Education</a>
+                <a href="#awards" class="nav-link text-slate-600 hover:text-teal-600 transition-colors duration-300">Awards</a>
+                <a href="#contact" class="nav-link bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+             <a href="#skills" class="block py-2 nav-link text-slate-600">Skills</a>
+             <a href="#projects" class="block py-2 nav-link text-slate-600">Projects</a>
+             <a href="#experience" class="block py-2 nav-link text-slate-600">Experience</a>
+             <a href="#education" class="block py-2 nav-link text-slate-600">Education</a>
+             <a href="#awards" class="block py-2 nav-link text-slate-600">Awards</a>
+             <a href="#contact" class="block py-2 nav-link text-slate-600">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+        <!-- Home/Hero Section -->
+        <section id="home" class="min-h-[80vh] flex flex-col justify-center items-center text-center py-20">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-4">
+                Full-Stack Developer & AI Enthusiast
+            </h1>
+            <p class="max-w-3xl text-lg md:text-xl text-slate-600 mb-8">
+                A passionate M.Tech Integrated Software Engineering student specializing in building scalable web and mobile applications with the MERN stack, Next.js, and TypeScript. Proven track record of developing innovative, production-level solutions from concept to deployment.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-teal-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-teal-700 transform hover:-translate-y-1 transition-all duration-300">
+                    View My Work
+                </a>
+                <a href="#contact" class="bg-white text-teal-600 font-semibold px-8 py-3 rounded-lg shadow-lg ring-1 ring-slate-200 hover:ring-teal-600 transform hover:-translate-y-1 transition-all duration-300">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="py-20">
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-teal-700 mb-4">Languages & Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">TypeScript</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">React.js</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">Next.js</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">React Native Expo</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">CSS</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-teal-700 mb-4">Backend & Databases</h3>
+                     <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Express.js</span>
+                        <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Flask</span>
+                        <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">MongoDB</span>
+                        <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Firebase</span>
+                        <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Supabase</span>
+                        <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">REST APIs</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-teal-700 mb-4">AI/ML & Tools</h3>
+                     <div class="flex flex-wrap gap-2">
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Stable Diffusion</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Computer Vision</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">YOLOv8</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Gemini AI</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Git/GitHub</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Socket.io</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">MERN Stack</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-4">Projects Showcase</h2>
+            <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">Here's a selection of my work, ranging from live, production-level applications with real users to foundational projects that demonstrate my technical journey.</p>
+            <div class="flex justify-center mb-8 gap-2">
+                <button class="tab-btn active px-6 py-2 font-semibold rounded-md transition-colors duration-300" data-target="live-projects">Live Projects</button>
+                <button class="tab-btn px-6 py-2 font-semibold rounded-md bg-white text-slate-700 ring-1 ring-slate-200 hover:bg-slate-100 transition-colors duration-300" data-target="other-projects">Other Projects</button>
+            </div>
+            
+            <div id="live-projects" class="section active">
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">Speedzy App 🚀</h3>
+                            <p class="text-slate-600 mt-2">A local delivery app for food, groceries & parcels in Pernambut with 1000+ customers and 1500+ orders processed.</p>
+                            <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React Native Expo</span><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">COD</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://speedzy.shop/" target="_blank" class="text-teal-600 font-semibold hover:underline">Website</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.mohammed_salick.Speedzy" target="_blank" class="text-teal-600 font-semibold hover:underline">Android</a>
+                                <a href="https://apps.apple.com/in/app/speedzy/id6747835648" target="_blank" class="text-teal-600 font-semibold hover:underline">iOS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">OSSVVEL TILES</h3>
+                            <p class="text-slate-600 mt-2">An e-commerce and product showcase website for a premium tiles and building materials showroom in Kanchipuram.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">E-commerce</span><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Showcase</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://ossvveltiles.com/" target="_blank" class="text-teal-600 font-semibold hover:underline">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">AEurope.in</h3>
+                            <p class="text-slate-600 mt-2">A specialized e-commerce platform for handcrafted leather products like belts, shoes, and bags.</p>
+                            <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">E-commerce</span><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Firebase</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://aeurope.in/" target="_blank" class="text-teal-600 font-semibold hover:underline">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">Wholesale Abaya & Hijabs</h3>
+                            <p class="text-slate-600 mt-2">A B2C e-commerce solution for a modest fashion business with a streamlined checkout process.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">B2C</span><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Firebase</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://wholesaleabayahijabs.in/" target="_blank" class="text-teal-600 font-semibold hover:underline">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">Iron Zone</h3>
+                            <p class="text-slate-600 mt-2">A dual-platform project (website & mobile apps) for a professional clothes ironing service in Pernambut.</p>
+                            <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Service App</span><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Firebase</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://www.ironzone.in/" target="_blank" class="text-teal-600 font-semibold hover:underline">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">Trend2Media</h3>
+                            <p class="text-slate-600 mt-2">In-development web app that uses news APIs and AI to automatically generate images/videos from headlines.</p>
+                            <div class="mt-4 flex flex-wrap gap-2"><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">AI/ML</span><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Stable Diffusion</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://trend2media.vercel.app/" target="_blank" class="text-teal-600 font-semibold hover:underline">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <div id="other-projects" class="section">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">ThreatSafe</h3>
+                            <p class="text-slate-600 mt-2">AI-powered ransomware detection system demonstrating expertise in cybersecurity and AI integration.</p>
+                            <div class="mt-4 flex flex-wrap gap-2"><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">AI/ML</span><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Cybersecurity</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://github.com/mohammedsalick/Ransomware" target="_blank" class="text-teal-600 font-semibold hover:underline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">SportsFiesta</h3>
+                            <p class="text-slate-600 mt-2">Full-stack corporate sports tournament platform, a finalist at the BitNBuild'24 Hackathon.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Full-Stack</span><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">MERN</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://github.com/mohammedsalick/SportsFiesta" target="_blank" class="text-teal-600 font-semibold hover:underline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">YOLOv8 Object Detection App</h3>
+                            <p class="text-slate-600 mt-2">A Streamlit web app for real-time object detection and model comparison.</p>
+                            <div class="mt-4 flex flex-wrap gap-2"><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Computer Vision</span><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">YOLOv8</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://huggingface.co/spaces/mohammedsalick/YOLOv8-Object-Detection-Model-Comparison" target="_blank" class="text-teal-600 font-semibold hover:underline">Hugging Face</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">MINDORA</h3>
+                            <p class="text-slate-600 mt-2">A Flask-based mental health support chatbot using empathetic AI responses.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Flask</span><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">AI/ML</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://github.com/mohammedsalick/MINDORA" target="_blank" class="text-teal-600 font-semibold hover:underline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">AI_Translator_Hub</h3>
+                            <p class="text-slate-600 mt-2">Real-time speech and text translation web application built with Python and Google's APIs.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Flask</span><span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Google APIs</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://github.com/mohammedsalick/AI_Translator_Hub" target="_blank" class="text-teal-600 font-semibold hover:underline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">FestFusion</h3>
+                            <p class="text-slate-600 mt-2">College event management platform that won first prize in a regional hackathon.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Hackathon Project</span><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://github.com/mohammedsalick/FestFusion" target="_blank" class="text-teal-600 font-semibold hover:underline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">NewsToday</h3>
+                            <p class="text-slate-600 mt-2">A dynamic news website created with React.js, demonstrating proficiency in API integration.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">API Integration</span><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://mohammedsalick.github.io/ADG_NewsApp/" target="_blank" class="text-teal-600 font-semibold hover:underline">Live Site</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">ChatRoom_Python</h3>
+                            <p class="text-slate-600 mt-2">A real-time chatroom built with Python, threading, and socket programming.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Socket Programming</span><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://github.com/mohammedsalick/ChatRoom_Python" target="_blank" class="text-teal-600 font-semibold hover:underline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">BookStore</h3>
+                            <p class="text-slate-600 mt-2">A comprehensive bookstore website designed with HTML, CSS, and JavaScript.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Web Dev</span><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML/CSS/JS</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://github.com/mohammedsalick/BookShop-using-Django-" target="_blank" class="text-teal-600 font-semibold hover:underline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800">VIT VTop Clone</h3>
+                            <p class="text-slate-600 mt-2">My very first web development project, built with HTML and CSS.</p>
+                             <div class="mt-4 flex flex-wrap gap-2"><span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Web Dev</span><span class="bg-slate-200 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML/CSS</span></div>
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://mohammedsalick.github.io/Vtop/Vtop/Vindex.html" target="_blank" class="text-teal-600 font-semibold hover:underline">Live Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+             <h2 class="text-3xl font-bold text-center text-slate-800 mb-12">Experience</h2>
+             <div class="relative max-w-2xl mx-auto pl-10 border-l-2 border-slate-200">
+                <div class="timeline-item mb-12 relative">
+                    <h3 class="text-lg font-bold text-slate-800">Web Development Intern</h3>
+                    <p class="font-medium text-teal-600">Webranc IT Solutions Private Limited</p>
+                    <p class="text-sm text-slate-500">June 2024 - July 2024</p>
+                </div>
+                 <div class="timeline-item mb-12 relative">
+                    <h3 class="text-lg font-bold text-slate-800">Senior Core Member, Machine Learning Domain</h3>
+                    <p class="font-medium text-teal-600">ADGVIT</p>
+                    <p class="text-sm text-slate-500">November 2024 - Present</p>
+                </div>
+                 <div class="timeline-item relative">
+                    <h3 class="text-lg font-bold text-slate-800">Junior Core Member, Machine Learning Domain</h3>
+                    <p class="font-medium text-teal-600">ADGVIT</p>
+                    <p class="text-sm text-slate-500">April 2024 - November 2024</p>
+                </div>
+             </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20 bg-white -mx-6 px-6">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center text-slate-800 mb-12">Education</h2>
+                <div class="relative max-w-2xl mx-auto pl-10 border-l-2 border-slate-200">
+                   <div class="timeline-item mb-12 relative">
+                       <h3 class="text-lg font-bold text-slate-800">M.Tech Integrated, Software Engineering</h3>
+                       <p class="font-medium text-teal-600">Vellore Institute of Technology (VIT) Vellore</p>
+                       <p class="text-sm text-slate-500">September 2022 - June 2027</p>
+                   </div>
+                    <div class="timeline-item mb-12 relative">
+                       <h3 class="text-lg font-bold text-slate-800">PUC, PCM</h3>
+                       <p class="font-medium text-teal-600">Islamiah Higher Secondary School</p>
+                       <p class="text-sm text-slate-500">Grade: 92%</p>
+                   </div>
+                    <div class="timeline-item relative">
+                       <h3 class="text-lg font-bold text-slate-800">SSLC, General Studies</h3>
+                       <p class="font-medium text-teal-600">Florence High School Bangalore</p>
+                       <p class="text-sm text-slate-500">Grade: 90%</p>
+                   </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Awards Section -->
+        <section id="awards" class="py-20">
+             <h2 class="text-3xl font-bold text-center text-slate-800 mb-12">Honors & Awards</h2>
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-slate-800">100xEngineers Buildathon Finalist</h3><p class="text-sm text-slate-600 mt-1">Finalist in the 100xEngineers Buildathon, standing out among 1,500 teams. This was a great hub of innovation, creativity, and collaboration.</p></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-slate-800">BitNBuild'24 Hackathon</h3><p class="text-sm text-slate-600 mt-1">Won the Tamil Nadu regional round and was a finalist in the national round in Mumbai.</p><div class="mt-4"><a href="https://unstop.com/certificate-preview/5ecac0c8-23fc-4d00-b972-a37a2e030fb7" target="_blank" class="text-teal-600 font-semibold text-sm hover:underline">View Credential</a></div></div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-slate-800">First Prize Winner, Bits and Build Tamil Nadu Regional Round</h3><p class="text-sm text-slate-600 mt-1">Issued by Google Developer Student Community REC</p><div class="mt-4"><a href="https://unstop.com/certificate-preview/d3bece3d-f96b-4d98-bb8c-4fad4b0e2d85" target="_blank" class="text-teal-600 font-semibold text-sm hover:underline">View Credential</a></div></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-slate-800">Best Innovative Idea in Techventure</h3><p class="text-sm text-slate-600 mt-1">Certificate of Achievement from ADGVIT</p><div class="mt-4"><a href="https://unstop.com/certificate-preview/a43ccbf5-2231-4a68-9a22-d9dbe71a4562" target="_blank" class="text-teal-600 font-semibold text-sm hover:underline">View Credential</a></div></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-slate-800">Python Certificate</h3><p class="text-sm text-slate-600 mt-1">Issued by HackerRank</p><div class="mt-4"><a href="https://www.hackerrank.com/certificates/846289ab221b" target="_blank" class="text-teal-600 font-semibold text-sm hover:underline">View Credential</a></div></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-slate-800">Certificate of Participation - Temenos Hackz'24</h3><p class="text-sm text-slate-600 mt-1">Anna University Chennai</p><div class="mt-4"><a href="http://unstop.com/certificate-preview/d3bece3d-f96b-4d98-bb8c-4fad4b0e2d85" target="_blank" class="text-teal-600 font-semibold text-sm hover:underline">View Credential</a></div></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-slate-800">ML-Fiesta: AI/ML Hackathon</h3><p class="text-sm text-slate-600 mt-1">International Institute of Information Technology Bangalore</p><div class="mt-4"><a href="https://unstop.com/certificate-preview/a43ccbf5-2231-4a68-9a22-d9dbe71a4562" target="_blank" class="text-teal-600 font-semibold text-sm hover:underline">View Credential</a></div></div>
+             </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+            <h2 class="text-3xl font-bold text-slate-800 mb-4">Let's Connect</h2>
+            <p class="text-slate-600 max-w-xl mx-auto mb-8">I'm currently seeking new opportunities and am open to collaboration. Feel free to reach out!</p>
+            <div class="flex justify-center items-center space-x-6">
+                 <a href="https://github.com/mohammedsalick" target="_blank" class="text-slate-600 hover:text-teal-600 transition-colors duration-300">
+                    <span class="font-mono text-2xl font-bold">GH</span>
+                 </a>
+                 <a href="https://www.linkedin.com/in/mohammed-salick-m-a-0b925b274" target="_blank" class="text-slate-600 hover:text-teal-600 transition-colors duration-300">
+                    <span class="font-mono text-2xl font-bold">LI</span>
+                 </a>
+                 <a href="https://huggingface.co/mohammedsalick" target="_blank" class="text-slate-600 hover:text-teal-600 transition-colors duration-300">
+                    <span class="font-mono text-2xl font-bold">HF</span>
+                 </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 text-center py-6">
+        <p>&copy; <span id="year"></span> Mohammed Salick M A. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const sections = document.querySelectorAll('.section');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const target = button.dataset.target;
+
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        if(!btn.classList.contains('bg-white')){
+                             btn.classList.add('bg-white','text-slate-700','ring-1','ring-slate-200', 'hover:bg-slate-100');
+                        }
+                    });
+                    button.classList.add('active');
+                    button.classList.remove('bg-white','text-slate-700','ring-1','ring-slate-200', 'hover:bg-slate-100');
+
+                    sections.forEach(section => {
+                        if (section.id === target) {
+                            section.classList.add('active');
+                        } else {
+                            section.classList.remove('active');
+                        }
+                    });
+                });
+            });
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            const navLinks = document.querySelectorAll('.nav-link');
+            const allSections = document.querySelectorAll('main section');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.4
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href').substring(1) === entry.target.id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            allSections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
