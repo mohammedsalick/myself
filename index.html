@@ -70,14 +70,16 @@
 
     <main class="container mx-auto px-6 pt-24">
         <!-- Home/Hero Section -->
-        <section id="home" class="min-h-[80vh] flex flex-col justify-center items-center text-center py-20">
+        <section id="home" class="min-h-[80vh] flex items-center py-20">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="md:w-1/2 text-center md:text-left">
             <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-4">
                 Full-Stack Developer & AI Enthusiast
             </h1>
             <p class="max-w-3xl text-lg md:text-xl text-slate-600 mb-8">
                 A passionate M.Tech Integrated Software Engineering student specializing in building scalable web and mobile applications with the MERN stack, Next.js, and TypeScript. Proven track record of developing innovative, production-level solutions from concept to deployment.
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap justify-center md:justify-start gap-4">
                 <a href="#projects" class="bg-teal-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-teal-700 transform hover:-translate-y-1 transition-all duration-300">
                     View My Work
                 </a>
@@ -85,7 +87,13 @@
                     Get In Touch
                 </a>
             </div>
-        </section>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center md:justify-end mt-12 md:mt-0">
+            <img src="./Profile.jpg" alt="Mohammed Salick M.A." class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-2xl ring-4 ring-teal-500">
+        </div>
+    </div>
+</section>
 
         <!-- Technical Skills Section -->
         <section id="skills" class="py-20">
